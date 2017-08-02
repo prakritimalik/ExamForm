@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Examination Form</title>
+	<link rel="stylesheet" type="text/css" href="six.css"/>
+
+</head>
+
+<body>
+    <h1> GGSIPU Examination Form </h1>
+    <form method="post" action="">
+    <em> The field marked with <span class=r> * </span> are mandatory. </em> <br>
+  <div>
+
+  <label> <b> Examination  </b> <span class="r" required> * </span>  </label> 
+
+<select> 
+<option> B.Tech </option>
+<option> BBA </option>
+<option> BCA </option>
+<option> B.Com </option>
+</select>
+</div>
+<div>
+  <label> <b> Registration Number : </b> <span class="r"> * </span> <input type="text" name="number" required pattern=".{10}" title="should be 10 digits"> </label> </br>
+  <label> <b>First Name : </b>  <span class="r"> * </span> <input type="text" name = "fname" value="" required > </label>
+  <label> <b>Last Name : </b>  <span class="r"> * </span><input type="text" name = "lname" value="" required> </label> </br>
+  <label> <b>Mother's Name : </b> <input type="text" name = "mname"> </label> </br>
+    <label> <b>Father's Name :</b> <input type="text" name = "fname"> </br>
+  </div> 
+
+  </div>
+  <div>
+  <label> <b> Gender : </b> </label>
+<label> Male <input type="radio" name="gender" value="male"> </label>
+<label> Female <input type="radio" name="gender" value="female"> </label>
+<label> Other <input type="radio" name="gender" value="other"> </label>
+</div>
+<div>
+<label> <b>  Email : </b> <span class="r"> * </span>  <input type="email" placeholder="your email" required </label>
+</div>
+<label> <b> Birthdate </b> <input type = "date" name="date"> </label> </label> </br>
+
+</select>
+<div>
+<label> <b> Address </b> <input type="text"> </br> <input type="text" class="tab"> </br> <input type="text" class="tab"> </label> </div> </br>
+<label> <b> City </b> <input type="text"> </label> </br>
+<label> <b> State </b> <input type="text"> </label> </br> 
+</div>
+<div>
+ <label> <b> Category: </b>  <span class="r"> * </span>   </label required>
+<label> General <input type="radio" name="category" value="gen"> </label>
+<label> SC/ST <input type="radio" name="category" value="scst"> </label>
+<label> OBC <input type="radio" name="category" value="obc"> </label>
+<label> Disabled <input type="radio" name="category" value="dis"> </label>
+
+</div>
+
+<input type="checkbox"> I do confirm that the above details are correct to my knowledge  </br>
+<button ="submit">Submit </button>
+</div>
+
+    </form>
+</body>
+</html>
